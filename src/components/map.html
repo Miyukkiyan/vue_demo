@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let arr = [
+            {id:1,name:'01-马'},
+            {id:2,name:'02-沙'},
+            {id:3,name:'03-岁'},
+            {id:4,name:'04-苟'},
+        ]
+
+       let newArr = arr.map(item =>{
+           return item.name.toLocaleLowerCase().indexOf('马')
+        })
+
+        console.log(newArr);
+
+        // let arr = [
+        //     {id:1,name:'a',c:'c',d:'d'},
+        //     {id:2,name:'b',c:'c',d:'d'},
+        //     {id:3,name:'c',c:'c',d:'d'},
+        //     {id:4,name:'d',c:'c',d:'d'},
+        // ]
+        // let newArr = []
+        // arr.forEach(item =>{
+        //     newArr.push({label:item.id, value: item.name})
+        // })
+        // console.log(newArr);
+
+    </script>
+</body>
+</html>

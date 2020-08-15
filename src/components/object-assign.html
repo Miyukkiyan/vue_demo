@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let obj1 = {a:1,b:2}
+        // let obj2 = {c:3}
+        // Object.assign(obj1,obj2)
+        // console.log(obj1);
+
+        let arr = [
+            {a:1,b:2},
+            {a:3,b:4},
+            {a:5,b:6},
+            {a:7,b:8},      
+        ]
+        let obj2 = {c:3}
+        // arr.forEach(item=>{
+        //     item.c = 3
+        // })
+        arr.forEach(item=>{
+            Object.assign(item,obj2)
+        })
+        console.log(arr);
+        
+    </script>
+</body>
+</html>

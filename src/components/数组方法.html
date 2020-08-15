@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     function filterMeetings(val) {
+    //         var meetingType = [
+    //             {label:'承办会议',value:'01'},
+    //             {label:'参会',value:'02'}
+    //         ]
+    //         const item = meetingType.find(item => item.value === val)
+    //         return item && item.label
+    //     }
+    //     var val = '01'
+    //    let a = filterMeetings(val)
+    //     console.log(a)
+
+     var arr = ['a','b','d']
+    arr.splice(2,0,'c')
+    console.log(arr);
+
+    var a = ['1','2','3'];
+//a.splice(操作位置,删除个数,插入元素 用逗号隔开)
+ 
+a.splice(2,0,'a') //添加 a=[1,2,3,'a']
+console.log(a);
+a.splice(3,1) //删除 a=[1,2,3]
+a.splice(2,1,'a') //修改 a=[1,2,'a']s
+    </script>
+</body>
+</body>
+</html>

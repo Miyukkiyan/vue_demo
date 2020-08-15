@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" cellspacing="0" border="1" align="center" width="1200px" height="200px">
+        <thead>
+        <tr>
+        <th colspan="8" class="red">xxx公司</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr align="center">
+        <td class="red">xxx</td>
+        <td colspan="3"></td>
+        <!-- <td></td>
+        <td></td> -->
+        <td class="red">xxx</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr align="center">
+        <td class="red">xxx</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="red">xxx</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr align="center">
+        <td class="red">xxx</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="red">xxx</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr align="center">
+        <td class="red">xxx</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="red">xxx</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr align="center">
+        <td class="red">xxx</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="red">xxx</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr align="center">
+        <td class="red">xxx</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="red">xxx</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr align="center">
+        <td class="red">xxx</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="red">xxx</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr align="center">
+        <td class="red">xxx</td>
+        <td></td>
+        <td class="red">xxx</td>
+        <td></td>
+        <td class="red">xxx</td>
+        <td></td>
+        <td class="red">xxx</td>
+        <td></td>
+        </tr>
+        <tr align="center">
+        <td class="yellow">xxx</td>
+        <td class="yellow">xxx</td>
+        <td class="yellow">xxx</td>
+        <td class="yellow">xxx</td>
+        <td class="yellow">xxx</td>
+        <td class="yellow">xxx</td>
+        <td class="yellow">xxx</td>
+        <td class="yellow">xxx</td>
+        </tr>
+        </tbody>
+        </table>
+</body>
+<script>
+let arr = [
+    {name:'张三',sex:'男'},
+    {name:'李四',sex:'女'}
+]
+
+let obj ={
+    age1: 18,
+    age2: 12
+}
+
+
+// 怎样让arr变成如下样式
+arr = [
+    {name:'张三',sex:'男',age:18},
+    {name:'李四',sex:'女',age:12}
+]
+
+let arr1 = [18,12]
+
+
+// let newArr = []
+for (let i in arr ){
+    for (let j in arr1){
+      if(i == j){
+          arr[i]['age'] = arr1[j]
+      }
+    }
+}
+console.log(arr);
+</script>
+</html>

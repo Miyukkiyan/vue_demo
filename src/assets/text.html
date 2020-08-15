@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css" media="screen">
+        .box{
+            display: flex;
+            margin:100px auto;
+            width:400px;
+            height:200px;
+            background-color: skyblue;
+        }
+        .inner{
+            width:200px;
+            height:100px;
+            flex-basis:300px;
+            background:pink;
+        }
+
+
+        *{
+        margin:0;
+        padding:0;
+    }
+    .wrap {
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+    }
+    .child {
+        min-height: 200px;
+        border: 2px solid #666;
+        -webkit-box-flex: 1;
+        margin: 10px;
+        font-size: 100px;
+        font-weight: bold;
+        font-family: Georgia;
+        -webkit-box-align: center;
+    }
+
+    .word-overflow-3{
+         /* overflow:hidden;
+         text-overflow:ellipsis;
+         display:-webkit-box;
+         -webkit-box-orient:vertical;
+         -webkit-line-clamp:3;
+         width: 100px; */
+         /* background-color: skyblue; */
+
+         display:-webkit-box;
+          text-overflow:ellipsis;
+          overflow:hidden;
+          width:100px;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient:vertical;
+        }
+
+        .word-overflow-3 div {
+            width: 100px;
+            height: 50px;
+            background-color: pink;
+            margin-bottom: 10px;
+        }
+
+        div {
+          display:-webkit-box;
+          text-overflow:ellipsis;
+          overflow:hidden;
+          width:100px;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient:vertical;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- <div class="box">
+        <div class="inner"></div>
+    </div> -->
+
+    <!-- <div class="wrap">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+    </div> -->
+<!-- 
+    <div class="word-overflow-3 div ">
+            文本显示为两行,超过部分隐藏并使用省略号修改 width 属性查看效果。
+
+    </div> -->
+    <div> 
+            文本显示为两行,超过部分隐藏并使用省略号
+            修改 width 属性查看效果。
+          </div>
+
+</body>
+</html>

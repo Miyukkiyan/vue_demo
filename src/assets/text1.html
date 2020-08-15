@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            position: relative;
+            margin: 100px auto;
+        }
+
+        .father:after {
+            content: "";
+            position: absolute;
+            left:0;
+            right:0;
+            bottom:0;
+            /* top:0; */
+            border-bottom: 1px solid blue;
+            -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+            -webkit-transform: scaleY(0.5);
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="father">
+
+    </div>
+
+    <a></a>
+    <input id="a" type="text" onchange="myfunction(event)">
+</body>
+    <script>
+        function myfunction(event){
+            console.log(event);
+            // var input = document.getElementById('a');
+            var value = event.target.value
+            console.log(value);
+        }
+    
+    </script>
+</html>
